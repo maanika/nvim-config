@@ -2,7 +2,10 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
-vim.g.mapleader= " "
+vim.g.mapleader = " "
+vim.opt.number = true
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
 
 -- Disable arrow keys in all relevant modes
 local modes = { "n", "i", "v", "s" }
@@ -13,3 +16,5 @@ for _, mode in pairs(modes) do
     vim.keymap.set(mode, key, "<nop>", { noremap = true, silent = true })
   end
 end
+
+vim.keymap.set('n', '<Space>', '<NoP>', { noremap = true, silent = true })
