@@ -18,3 +18,4 @@ for _, mode in pairs(modes) do
 end
 
 vim.keymap.set('n', '<Space>', '<NoP>', { noremap = true, silent = true })
+vim.g.python3_host_prog = '/usr/bin/python3'

@@ -36,6 +36,20 @@ return {
       })
       vim.lsp.enable('clangd')
 
+      --Python
+      vim.lsp.config("pyright", {
+        settings = {
+          python = {
+            analysis = {
+              typeCheckingMode = "basic",
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
+            },
+          },
+        },
+       })
+       vim.lsp.enable("pyright")
+
     end
   },
 }

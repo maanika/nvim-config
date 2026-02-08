@@ -15,6 +15,7 @@ return {
       'cpp',
       'markdown',
       'markdown_inline',
+      'python',
     }
   end
 }
