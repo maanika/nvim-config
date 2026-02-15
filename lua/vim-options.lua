@@ -6,6 +6,7 @@ vim.g.mapleader = " "
 vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"
+vim.opt.relativenumber = true
 
 -- Disable arrow keys in all relevant modes
 local modes = { "n", "i", "v", "s" }
