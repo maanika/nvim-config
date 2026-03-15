@@ -13,11 +13,12 @@ local modes = { "n", "i", "v", "s" }
 local keys = { "<Up>", "<Down>", "<Left>", "<Right>" }
 
 for _, mode in pairs(modes) do
-  for _, key in pairs(keys) do
-    vim.keymap.set(mode, key, "<nop>", { noremap = true, silent = true })
-  end
+	for _, key in pairs(keys) do
+		vim.keymap.set(mode, key, "<nop>", { noremap = true, silent = true })
+	end
 end
 
-vim.keymap.set('n', '<Space>', '<NoP>', { noremap = true, silent = true })
-vim.g.python3_host_prog = '/usr/bin/python3'
+vim.keymap.set("n", "<Space>", "<NoP>", { noremap = true, silent = true })
+vim.g.python3_host_prog = "/usr/bin/python3"
 -- vim.opt.mouse = ""
+
