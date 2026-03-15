@@ -53,6 +53,10 @@ return {
 				{ capabilities = capabilities },
 			})
 			vim.lsp.enable("pyright")
+
+            -- Zig
+            vim.lsp.config("zls", { capabilities = capabilities })
+            vim.lsp.enable("zls")
 		end,
 	},
 }
