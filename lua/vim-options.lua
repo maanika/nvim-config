@@ -22,3 +22,6 @@ vim.keymap.set("n", "<Space>", "<NoP>", { noremap = true, silent = true })
 vim.g.python3_host_prog = "/usr/bin/python3"
 -- vim.opt.mouse = ""
 
+-- Global Window Borders :) Finally!
+vim.o.winborder = 'rounded'
+
